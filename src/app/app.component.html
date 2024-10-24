@@ -1,0 +1,78 @@
+<div class="container ">
+  <!-- Header and inputs -->
+  <div class="header">
+    <div class="bg-red-50">
+      <h1 class="text-4xl underline">Budget Builder</h1>
+      <div class="input-begin-date">
+        <input type="text" class="form-control" datepicker-popup="MM/yyyy" ng-model="dt" is-open="opened" datepicker-options="{minMode: 'month'}" datepicker-mode="'month'"/>
+        <span class="input-group-btn">
+            <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+        </span>
+      </div>
+      <div class="input-begin-date">
+        <input type="text" class="form-control" datepicker-popup="MM/yyyy" ng-model="dt" is-open="opened" datepicker-options="{minMode: 'month'}" datepicker-mode="'month'"/>
+        <span class="input-group-btn">
+            <button type="button" class="btn btn-default" ng-click="open($event)"><i class="glyphicon glyphicon-calendar"></i></button>
+        </span>
+      </div>
+  </div>
+
+  <div class="main-content">
+    <!-- Header and inputs -->
+    <table class="border-separate border-spacing-2 border border-slate-500 ">
+      <thead>
+        <tr>
+          <th class="border border-slate-600" *ngFor="let month of months">{{month}}</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="border border-slate-700 ">General Income</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700 ">Ohio</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700 ">Michigan</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+        </tr>
+        <tr>
+          <td class="border border-slate-700 ">Michigan</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+          <td class="border border-slate-700 ">0</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
